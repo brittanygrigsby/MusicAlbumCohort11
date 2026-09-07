@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Foundation
 
-struct Album: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+//MARK: - Data Model
 
-#Preview {
-    Album()
+struct Album:Identifiable{
+    
+    let id:UUID = UUID()
+    let title:String
+    let artist:String
+    let color:Color
 }

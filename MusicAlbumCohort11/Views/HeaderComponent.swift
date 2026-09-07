@@ -4,15 +4,23 @@
 //
 //  Created by Brittany Grigsby on 8/24/26.
 //
-
 import SwiftUI
 
-struct HeaderComponent: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct HeaderComponent:View {
+    var body: some View{
+        HStack{
+            Text("My Albums").font(.title2).bold()
+            
+            Spacer()
+            
+            Text("Album:\(albums.count)")
+                .foregroundStyle(.secondary)
+            
+        }.padding(.horizontal)
+            .padding()
     }
 }
 
-#Preview {
+#Preview{
     HeaderComponent()
 }
