@@ -43,19 +43,13 @@ struct ContentView: View {
                     }
                 }
             }
+            .padding()
         }
     }
 }
 
 
-
-
-// MARK: HEADER COMPONENT
-
 #Preview {
     ContentView()
-   // FruitCard(fruit:fruits[0])
-    //FruitCard(fruit:fruits[1])
-    //FruitCard(fruit:fruits[2])
 
 }

@@ -20,7 +20,9 @@ struct AlbumCard:View {
             VStack(spacing: 16){
                 Text(album.title).font(.system(size:15))
                 Text(album.artist).font(Font.system(size:20).bold())
+                    
                 }.padding()
+
         }
         .frame(maxWidth: .infinity)
         .frame(height:250)
